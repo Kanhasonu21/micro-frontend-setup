@@ -157,10 +157,10 @@
   background: rgba(255,255,255,0.22);
   border: none;
   color: #1e90ff;
-  font-size: 2.2rem;
+  font-size: 1rem;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  width: 31px;
+  height: 31px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,14 +168,12 @@
   z-index: 10;
   box-shadow: 0 2px 8px rgba(30,144,255,0.10);
   transition: background 0.3s, color 0.3s, transform 0.18s;
-  opacity: 0.85;
+  opacity: 0.55;
 }
 .carousel-arrow.left { left: 24px; }
 .carousel-arrow.right { right: 24px; }
 .carousel-arrow:hover {
-  background: #ff512f;
-  color: #fff;
-  transform: scale(1.12);
+  opacity: 0.90;
 }
 
 .carousel-indicators {

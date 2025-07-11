@@ -22,7 +22,10 @@ const FeaturedProducts = () => {
             <img src={product.image} alt={product.title} />
             <h3>{product.title}</h3>
             <p className="price">{product.price}</p>
-            <button className="buy-btn">Buy Now</button>
+            <div className="button-container">
+              <button className="liquid-glass-button">Buy Now</button>
+              <button className="liquid-glass-button">Add to Cart</button>
+            </div>
           </div>
         ))}
       </div>

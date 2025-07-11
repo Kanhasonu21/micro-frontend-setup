@@ -1,8 +1,8 @@
 .featured-section {
-  margin: 48px auto 0 auto;
-  max-width: 1100px;
-  padding: 0 20px;
-}
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;}
 
 .featured-section h2 {
   text-align: center;
@@ -19,8 +19,31 @@
   gap: 32px;
   justify-content: center;
 }
-
 .product-card {
+  width: 320px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.37),
+    inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  color: #fff;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+
+/* .product-card {
   background: rgba(255,255,255,0.18);
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
@@ -39,7 +62,7 @@
 .product-card:hover {
   transform: translateY(-10px) scale(1.07);
   background: rgba(255,255,255,0.32);
-}
+} */
 
 .product-card img {
   width: 120px;
@@ -67,24 +90,43 @@
   font-weight: 700;
   margin-bottom: 16px;
 }
+.button-container{
+  display: flex;
+  gap:20px;
 
-.buy-btn {
-  background: linear-gradient(90deg, #ff512f 0%, #1e90ff 100%);
-  color: #fff;
-  border: none;
-  padding: 10px 28px;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: 700;
+}
+.liquid-glass-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.25),
+    0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
   cursor: pointer;
-  transition: background 0.22s, transform 0.18s, color 0.22s, box-shadow 0.22s;
-  letter-spacing: 0.5px;
-  filter: drop-shadow(0 2px 8px #ffb34744);
+}
+
+.liquid-glass-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.3),
+    0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+.liquid-glass-button:active {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .buy-btn:hover {
-  background: linear-gradient(90deg, #ffb347 0%, #1e90ff 100%);
-  color: #fff200;
   transform: scale(1.12);
-  box-shadow: 0 6px 24px #ffb34755;
 } 

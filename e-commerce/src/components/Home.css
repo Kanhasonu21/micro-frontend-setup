@@ -1,7 +1,6 @@
 .landing-container {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f2f6ff;
-  min-height: 100vh;
+  background-color: #fff;
 }
 
 .hero-section {
